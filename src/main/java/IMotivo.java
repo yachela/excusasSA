@@ -1,3 +1,3 @@
 public interface IMotivo {
-    String getMotivo();
+    String getJustificacion();
 }
