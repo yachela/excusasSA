@@ -7,9 +7,9 @@ public class CreacionDeExcusasTest {
     void creadorDeExcusasTrivialesDebeCrearUnaExcusaTrivialConMotivoSimple(){
         CreadorExcusa creador = new CreadorExcusasTriviales();
 
-        Excusa excusaCreada = creador.CrearExcusa();
+        Excusa excusaCreada = creador.crearExcusa();
 
-        AssertNotNull(excusaCreada);
+        assertNotNull(excusaCreada);
         assertInstanceOf(ExcusaTrivial.class, excusaCreada);
         assertInstanceOf(MotivoSimple.class, excusaCreada.getMotivo());
     }
