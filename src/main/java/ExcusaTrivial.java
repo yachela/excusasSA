@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public class ExcusaTrivial extends Excusa {
+    public ExcusaTrivial(IMotivo motivo) {
+        super(motivo);
+    }
 
-public class ExcusaTrivial {
+    @Override
+    public void procesar() {
+        System.out.println("Excusa Trivial en proceso");
+    }
 }

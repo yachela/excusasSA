@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public class CreadorExcusa {
+public abstract class CreadorExcusa {
+    public abstract Excusa crearExcusa();
 }
