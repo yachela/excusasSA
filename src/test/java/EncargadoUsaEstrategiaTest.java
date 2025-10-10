@@ -19,6 +19,11 @@ public class EncargadoUsaEstrategiaTest {
         public TestEncargado() {
             super("Nombre test", "prueba@test.com", 2923);
         }
+
+        @Override
+        protected void procesar(Excusa excusa) {
+
+        }
     }
 
     @InjectMocks
