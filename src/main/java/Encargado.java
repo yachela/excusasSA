@@ -27,5 +27,5 @@ public abstract class Encargado extends Empleado implements IManejadorExcusa{
         return siguiente;
     }
 
-    protected abstract void procesar(Excusa excusa);
+    protected abstract boolean procesar(Excusa excusa);
 }
