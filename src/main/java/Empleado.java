@@ -1,12 +1,12 @@
 public class Empleado {
     private String nombre;
     private String email;
-    private int legado;
+    private int legajo;
 
-    public Empleado(String nombre, String email, String legado) {
+    public Empleado(String nombre, String email, int legajo) {
         this.nombre = nombre;
         this.email = email;
-        this.legado = legado;
+        this.legajo = legajo;
     }
 
     public String getNombre() {
@@ -17,7 +17,7 @@ public class Empleado {
         return email;
     }
 
-    public String getLegado() {
-        return legado;
+    public int getLegajo() {
+        return legajo;
     }
 }
