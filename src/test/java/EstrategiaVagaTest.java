@@ -17,12 +17,11 @@ public class EstrategiaVagaTest {
 
     @Test
     void estrategiaVagaDebePasarLaExcusaAlSiguienteEncargado(){
-        when(mockEncargado.setSiguiente()).thenReturn(mockSiguiente);
-        EstrategiaVaga estrategia = new EstrategiaVaga;
+        when(mockEncargado.getSiguiente()).thenReturn(mockSiguiente);
+        EstrategiaVaga estrategia = new EstrategiaVaga();
 
         estrategia.manejar(mockEncargado, mockExcusa);
 
         verify(mockSiguiente).manejarExcusa(mockExcusa);
-        verifyNoInteractions(mockEncargado.procesar(mockExcusa));
     }
 }
