@@ -21,8 +21,8 @@ public class EncargadoUsaEstrategiaTest {
         }
 
         @Override
-        protected void procesar(Excusa excusa) {
-
+        protected boolean procesar(Excusa excusa) {
+            return true;
         }
     }
 
