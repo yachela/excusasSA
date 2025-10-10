@@ -28,4 +28,14 @@ public class EstrategiaNormalTest {
         verify(mockEncargado).procesar(mockExcusa);
         verify(mockEncargado, never()).getSiguiente();
     }
+
+    @Test
+    void manejarDebePasarAlSiguienteSiEncargadoNoPuedeProcesar() {
+        when(mockEncargado.procesar(mockExcusa)).thenReturn(false);
+        when(mockEncargado.getSiguiente()).thenReturn(mockSiguiente);
+        EstrategiaNormal estrategia = new EstrategiaNormal();
+        estrategia.manejar(mockEncargado, mockExcusa);
+        verify(mockEncargado).procesar(mockExcusa);
+
+    }
 }
