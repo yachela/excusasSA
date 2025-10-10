@@ -4,6 +4,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import static org.mockito.Mockito.verify;
+
 @ExtendWith(MockitoExtension.class)
 public class EncargadoUsaEstrategiaTest {
 
@@ -20,13 +22,13 @@ public class EncargadoUsaEstrategiaTest {
     }
 
     @InjectMocks
-    private TestEncargado testEncargado;
+    private TestEncargado encargado;
 
     @Test
     void encargadoDebeDelegarElManejoDeSuExtrategia(){
         encargado.setEstrategia(mockEstrategia);
 
-        encargado.manejarExcusa();
+        encargado.manejarExcusa(mockExcusa);
 
         verify(mockEstrategia).manejar(encargado, mockExcusa);
     }
