@@ -1,7 +1,7 @@
 public class Empleado {
     private String nombre;
     private String email;
-    private String legado;
+    private int legado;
 
     public Empleado(String nombre, String email, String legado) {
         this.nombre = nombre;
