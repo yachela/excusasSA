@@ -1,5 +1,5 @@
 
-public class Encargado extends Empleado implements IManejadorExcusa{
+public abstract class Encargado extends Empleado implements IManejadorExcusa{
 
     protected IManejadorExcusa siguiente;
     private IEstrategiaManejo estrategia;
@@ -26,4 +26,6 @@ public class Encargado extends Empleado implements IManejadorExcusa{
     public IManejadorExcusa getSiguiente(){
         return siguiente;
     }
+
+    protected abstract void procesar(Excusa excusa);
 }
