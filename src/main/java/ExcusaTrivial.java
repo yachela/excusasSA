@@ -1,6 +1,6 @@
 public class ExcusaTrivial extends Excusa {
-    public ExcusaTrivial(IMotivo motivo) {
-        super(motivo);
+    public ExcusaTrivial(IMotivo motivo, Empleado empleado) {
+        super(motivo, empleado);
     }
 
     @Override

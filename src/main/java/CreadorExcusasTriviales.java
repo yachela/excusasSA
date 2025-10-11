@@ -1,12 +1,6 @@
 public class CreadorExcusasTriviales extends CreadorExcusa {
     @Override
-    public Excusa crearExcusa() {
-        IMotivo motivo = new MotivoSimple();
-        return new ExcusaTrivial(motivo);
-    }
-
-    @Override
     public Excusa crearExcusa(Empleado empleado) {
-        return null;
+        return new ExcusaTrivial(new MotivoSimple(), empleado);
     }
 }

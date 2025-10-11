@@ -2,8 +2,9 @@ public abstract class Excusa {
     protected IMotivo motivo;
     protected Empleado empleado;
 
-    protected Excusa(IMotivo motivo) {
+    protected Excusa(IMotivo motivo, Empleado empleado) {
         this.motivo = motivo;
+        this.empleado = empleado;
     }
 
     public IMotivo getMotivo() {

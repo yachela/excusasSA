@@ -1,6 +1,6 @@
 public class ExcusaModerada extends Excusa {
     public ExcusaModerada(IMotivo motivo, Empleado empleado) {
-        super(motivo);
+        super(motivo, empleado);
     }
 
     @Override
@@ -10,6 +10,6 @@ public class ExcusaModerada extends Excusa {
 
     @Override
     public boolean serProcesadaPor(Encargado encargado) {
-        return false;
+        return encargado.procesar(this);
     }
 }
