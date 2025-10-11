@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class MotivoAbduccionAlien implements IMotivo {
+    @Override
+    public String getJustificacion() {
+        return "Fui abducido por aliens.";
+    }
 
-public class MotivoAbduccionAlien {
+    @Override
+    public boolean serProcesadoPor(SupervisorDeArea supervisor, Excusa excusa) {
+        return false;
+    }
 }

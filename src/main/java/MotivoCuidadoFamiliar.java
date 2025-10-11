@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class MotivoCuidadoFamiliar implements IMotivo{
+    @Override
+    public String getJustificacion() {
+        //TODO mensaje motivo
+        return "";
+    }
 
-public class MotivoCuidadoFamiliar {
+    @Override
+    public boolean serProcesadoPor(SupervisorDeArea supervisor, Excusa excusa) {
+        return false;
+    }
 }
