@@ -27,8 +27,13 @@ public abstract class Encargado extends Empleado implements IManejadorExcusa{
         return siguiente;
     }
 
+    protected abstract boolean procesar(ExcusaModerada excusa);
+
     protected abstract boolean procesar(Excusa excusa);
 
     public abstract boolean procesar(ExcusaTrivial excusa);
-    //public abstract boolean procesar(ExcusaModerada excusa);
+
+    public abstract boolean procesarMotivoEspecifico(MotivoCorteSuministro motivoCorteSuministro, Excusa excusa);
+
+    public abstract boolean procesar(ExcusaCompleja excusa);
 }
