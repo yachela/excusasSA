@@ -24,9 +24,8 @@ class SupervisorDeAreaTest {
 
         boolean resultado = supervisor.procesar(excusaModerada);
 
-        // 3. Assert
         assertTrue(resultado);
-        verify(mockEmailSender).enviarEmail(
+        verify(mockEmailSender).enviarMail(
                 "EDESUR@mailfake.com.ar",
                 "supervisor.area@excusa.sa",
                 "Consulta por corte de suministro",
