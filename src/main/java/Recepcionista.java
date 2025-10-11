@@ -19,6 +19,21 @@ public class Recepcionista extends Encargado {
     }
 
     @Override
+    public boolean procesar(ExcusaTrivial excusa) {
+        return false;
+    }
+
+    @Override
+    public boolean procesarMotivoEspecifico(MotivoCorteSuministro motivoCorteSuministro, Excusa excusa) {
+        return false;
+    }
+
+    @Override
+    public boolean procesar(ExcusaCompleja excusa) {
+        return false;
+    }
+
+    @Override
     public boolean procesar(ExcusaModerada excusa) {
         return false;
     }
