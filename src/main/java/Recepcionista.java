@@ -8,7 +8,6 @@ public class Recepcionista extends Encargado {
 
     @Override
     public boolean procesar(Excusa excusa) {
-        if (excusa instanceof ExcusaTrivial) {
             String emailDestino = excusa.getEmpleado().getEmail();
             emailSender.enviarMail(
                     emailDestino,
@@ -17,7 +16,10 @@ public class Recepcionista extends Encargado {
                     "la licencia fue aceptada"
             );
             return true;
-        }
+    }
+
+    @Override
+    public boolean procesar(ExcusaModerada excusa) {
         return false;
     }
 }

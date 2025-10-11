@@ -7,4 +7,9 @@ public class ExcusaTrivial extends Excusa {
     public void procesar() {
         System.out.println("Excusa Trivial en proceso");
     }
+
+    @Override
+    public boolean serProcesadaPor(Encargado encargado) {
+        return encargado.procesar(this);
+    }
 }

@@ -15,4 +15,6 @@ public abstract class Excusa {
     public Empleado getEmpleado() {
         return empleado;
     }
+
+    public abstract boolean serProcesadaPor(Encargado encargado);
 }
