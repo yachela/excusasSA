@@ -12,4 +12,7 @@ public abstract class Excusa {
 
     public abstract void procesar();
 
+    public Empleado getEmpleado() {
+        return empleado;
+    }
 }
