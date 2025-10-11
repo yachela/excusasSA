@@ -21,8 +21,28 @@ public class EncargadoUsaEstrategiaTest {
         }
 
         @Override
+        protected boolean procesar(ExcusaModerada excusa) {
+            return false;
+        }
+
+        @Override
         protected boolean procesar(Excusa excusa) {
             return true;
+        }
+
+        @Override
+        public boolean procesar(ExcusaTrivial excusa) {
+            return false;
+        }
+
+        @Override
+        public boolean procesarMotivoEspecifico(MotivoCorteSuministro motivoCorteSuministro, Excusa excusa) {
+            return false;
+        }
+
+        @Override
+        public boolean procesar(ExcusaCompleja excusa) {
+            return false;
         }
     }
 
