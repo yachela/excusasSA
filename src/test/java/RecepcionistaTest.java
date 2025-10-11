@@ -33,4 +33,14 @@ class RecepcionistaTest {
                 "la licencia fue aceptada"
         );
     }
+
+    @Test
+    void noDebeProcesarYRetornarFalseParaExcusasComplejas() {
+
+        Excusa excusaCompleja = mock(ExcusaCompleja.class);
+
+        boolean resultado = recepcionista.procesar(excusaCompleja);
+
+        assertFalse(resultado);
+    }
 }
