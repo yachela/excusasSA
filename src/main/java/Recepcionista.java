@@ -34,6 +34,11 @@ public class Recepcionista extends Encargado {
     }
 
     @Override
+    public boolean procesar(ExcusaInverosimil excusa) {
+        return false;
+    }
+
+    @Override
     public boolean procesar(ExcusaModerada excusa) {
         return false;
     }

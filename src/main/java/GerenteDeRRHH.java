@@ -19,7 +19,7 @@ public class GerenteDeRRHH extends Encargado {
     }
 
     @Override
-    protected boolean procesar(Excusa excusa) {
+    public boolean procesar(Excusa excusa) {
         return false;
     }
 
@@ -27,5 +27,10 @@ public class GerenteDeRRHH extends Encargado {
     public boolean procesar(ExcusaCompleja excusa) {
         System.out.println("Gerente: Aceptando excusa compleja -> " + excusa.getMotivo().getJustificacion());
         return true;
+    }
+
+    @Override
+    public boolean procesar(ExcusaInverosimil excusa) {
+        return false;
     }
 }

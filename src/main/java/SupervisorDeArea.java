@@ -6,11 +6,6 @@ public class SupervisorDeArea extends Encargado {
     }
 
     @Override
-    protected boolean procesar(Excusa excusa) {
-        return false;
-    }
-
-    @Override
     public boolean procesar(ExcusaTrivial excusa) {
         return false;
     }
@@ -36,6 +31,11 @@ public class SupervisorDeArea extends Encargado {
 
     @Override
     public boolean procesar(ExcusaCompleja excusa) {
+        return false;
+    }
+
+    @Override
+    public boolean procesar(ExcusaInverosimil excusa) {
         return false;
     }
 }
