@@ -7,20 +7,15 @@ public class Recepcionista extends Encargado {
     }
 
     @Override
-    public boolean procesar(Excusa excusa) {
-            String emailDestino = excusa.getEmpleado().getEmail();
-            emailSender.enviarMail(
-                    emailDestino,
-                    "rrhh@excusa.sa",
-                    "motivo demora",
-                    "la licencia fue aceptada"
-            );
-            return true;
-    }
-
-    @Override
     public boolean procesar(ExcusaTrivial excusa) {
-        return false;
+        String emailDestino = excusa.getEmpleado().getEmail();
+        emailSender.enviarMail(
+                emailDestino,
+                "rrhh@excusa.sa",
+                "motivo demora",
+                "la licencia fue aceptada"
+        );
+        return true;
     }
 
     @Override
