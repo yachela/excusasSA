@@ -26,7 +26,7 @@ public class EncargadoUsaEstrategiaTest {
         }
 
         @Override
-        protected boolean procesar(Excusa excusa) {
+        public boolean procesar(Excusa excusa) {
             return true;
         }
 
@@ -42,6 +42,11 @@ public class EncargadoUsaEstrategiaTest {
 
         @Override
         public boolean procesar(ExcusaCompleja excusa) {
+            return false;
+        }
+
+        @Override
+        public boolean procesar(ExcusaInverosimil excusa) {
             return false;
         }
     }
