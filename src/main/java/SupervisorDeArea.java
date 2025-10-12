@@ -1,7 +1,7 @@
 public class SupervisorDeArea extends Encargado {
     private final EmailSender emailSender;
     public SupervisorDeArea(EmailSender emailSender) {
-        super("Supervisor", "supervidor@excusas.com", 3000);
+        super("Supervisor", "supervisor.area@excusa.sa", 3000);
         this.emailSender = emailSender;
     }
 
