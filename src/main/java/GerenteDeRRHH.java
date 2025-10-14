@@ -19,13 +19,8 @@ public class GerenteDeRRHH extends Encargado {
     }
 
     @Override
-    public boolean procesar(Excusa excusa) {
-        return false;
-    }
-
-    @Override
     public boolean procesar(ExcusaCompleja excusa) {
-        System.out.println("Gerente: Aceptando excusa compleja -> " + excusa.getMotivo().getJustificacion());
+        System.out.println("Gerente: Aceptando excusa compleja " + excusa.getMotivo().getJustificacion());
         return true;
     }
 
