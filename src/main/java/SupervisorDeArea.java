@@ -16,15 +16,13 @@ public class SupervisorDeArea extends Encargado {
     }
 
     public boolean procesarMotivoEspecifico(MotivoCorteSuministro motivo, Excusa excusa) {
-        String cuerpo = String.format("Consulta por el empleado %s, legajo %d",
-                excusa.getEmpleado().getNombre(), excusa.getEmpleado().getLegajo());
+        String cuerpo = "Consulta por el empleado";
         emailSender.enviarMail("EDESUR@mailfake.com.ar", this.getEmail(), "Consulta por corte de suministro", cuerpo);
         return true;
     }
 
     public boolean procesarMotivoEspecifico(MotivoCuidadoFamiliar motivo, Excusa excusa) {
-        String cuerpo = String.format("Hola %s, esperamos que todo esté bien. Saludos.",
-                excusa.getEmpleado().getNombre());
+        String cuerpo = "Hola, esperamos que todo esté bien. Saludos.";
         emailSender.enviarMail(excusa.getEmpleado().getEmail(), this.getEmail(), "Consulta sobre tu situación", cuerpo);
         return true;
     }
