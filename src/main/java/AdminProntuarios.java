@@ -13,7 +13,7 @@ public class AdminProntuarios {
         return instance;
     }
 
-    public void registrarProntuario(Excusa excusa) {
+    public void registrarProntuario(ExcusaInverosimil excusa) {
         System.out.println("REGISTRANDO PRONTUARIO para: "
                 + excusa.getEmpleado().getNombre()
                 + " por motivo: " + excusa.getMotivo().getJustificacion());
