@@ -1,8 +1,7 @@
 public class MotivoCuidadoFamiliar implements IMotivo{
     @Override
     public String getJustificacion() {
-        //TODO mensaje motivo
-        return "";
+        return "Motivo familiar";
     }
 
     @Override

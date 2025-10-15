@@ -2,7 +2,7 @@ public class MotivoCorteSuministro implements IMotivo {
 
     @Override
     public String getJustificacion() {
-        return "";
+        return "Me cortaron el agua";
     }
 
     @Override
