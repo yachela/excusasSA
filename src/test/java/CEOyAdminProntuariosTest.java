@@ -1,3 +1,4 @@
+import ar.edu.davinci.Services.AdminProntuarios;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

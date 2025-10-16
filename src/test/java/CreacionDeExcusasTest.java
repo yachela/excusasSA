@@ -1,3 +1,9 @@
+import ar.edu.davinci.Dominio.Empleado;
+import ar.edu.davinci.Dominio.Excusa.Excusa;
+import ar.edu.davinci.Dominio.Excusa.ExcusaTrivial;
+import ar.edu.davinci.Dominio.Excusa.Motivo.MotivoSimple;
+import ar.edu.davinci.Factory.CreadorExcusa;
+import ar.edu.davinci.Factory.CreadorExcusasTriviales;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
